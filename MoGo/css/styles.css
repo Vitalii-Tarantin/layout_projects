@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-/* text styles */
-html {
-    font-size: 'Roboto', Arial, sans-serif;
+/*text styles*/
+html{
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
     font-size: 15px;
     color: #999;
@@ -20,64 +20,65 @@ a {
     text-decoration: none;
 }
 
-.lead{
+.lead {
     text-align: center;
-    padding: 22px 100px 90px;
+    padding: 22px 100px 90px; /*PerfectPixel*/
 }
 
 .subheadline {
     text-align: center;
     font-weight: 300;
     font-style: italic;
-    line-height: 1;
+    line-height: 1; /*PerfectPixel*/
 }
- .text_on_background p,
- .text_on_background h1,
- .text_on_background h2,
- .text_on_background h3,
- .text_on_background h4,
- .text_on_background h5,
- .text_on_background h6,
- .text_on_background a,
- .text_on_background span {
-     color: #fff;
- }
 
- /* heading styles */
+.text_on_background p,
+.text_on_background h1,
+.text_on_background h2,
+.text_on_background h3,
+.text_on_background h4,
+.text_on_background h5,
+.text_on_background h6,
+.text_on_background a,
+.text_on_background span {
+    color: #fff;
+}
+
+/*headings styles*/
  h1 {
-     font-family: 'Kaushan Script', 'Monotype Corsiva', cursive;
-     font-size: 1.6rem;
-     line-height: 1.25;
-     text-align: center;
-     color: #333;
-     margin: 0 auto 10px;
- }
+    font-family: 'Kaushan Script', 'Monotype Corsiva', cursive;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    text-align: center;
+    color: #333;
+    margin: 0 auto 10px;
+}
 
- h2,
- h3,
- h4,
- h5,
- h6{
-     font-family: 'Monserrat', Arial, sans-serif;
-     line-height: 1.25;
-     text-transform: uppercase;
-     font-weight: 400;
-     text-align: left;
-     color: #333;
-     margin: 0;
- }
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.25;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: left;
+    color: #333;
+    margin: 0;
+}
 
- h2 {
-     font-size: 2rem;
-     text-align: center;
+h2 {
+    font-size: 2rem;
+    text-align: center;
     font-weight: 700;
     position: relative;
-    margin-bottom: 55px;
- }
+    margin-bottom: 55px; /*PerfectPixel*/
+}
 
- h3 {
-     font-size: 0.93rem;
-     margin-bottom: 12px;
+h3 {
+    font-size: 0.933rem;
+    margin-bottom: 12px;
 }
 
 h4 {
@@ -85,7 +86,7 @@ h4 {
     line-height: 1.5;
 }
 
-body {
+body{
     margin: 0;
 }
 
@@ -95,7 +96,7 @@ img {
     vertical-align: top;
 }
 
-.wrapper {
+.wrapper{
     max-width: 100%;
     overflow: hidden;
     position: relative;
@@ -109,20 +110,21 @@ img {
     z-index: 1;
 }
 
-.organge_gradient:before {
+/*transparent gradient*/
+.orange_gradient:before {
     content: "";
     display: block;
-    position: absolute;
+    position: absolute;;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: -webkit-gradient(liner, left top, left bottom, from(rgba(243,129,129,0.9)),to(rgba(252,227,138,0.9)));
-    background: linear-gradient(to bottom, rgba(243,129,129,0.9) 0%,rgba(252,227,138,0.9));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(243,129,129,0.9)),to(rgba(252,227,138,0.9)));
+    background: linear-gradient(to bottom, rgba(243,129,129,0.9) 0%,rgba(252,227,138,0.9) 100%);
 }
 
-/* line under header */
-.underline:before{
+/*line under header*/
+.underline:before {
     content: "";
     display: block;
     width: 60px;
@@ -131,11 +133,11 @@ img {
     position: absolute;
     left: 50%;
     bottom: -37px;
-    -webkit-transforn: translateX(-50%);
+    -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
 }
 
-/* main header */
+/*main header*/
 .main_header {
     position: absolute;
     left: 0;
@@ -145,12 +147,13 @@ img {
 }
 
 .main_header a{
-    padding-bottom: 8px;
+    padding-bottom: 8px; /*PerfectPixel*/
 }
 
-.main_logo {
+.main_logo{
     text-transform: none;
     margin: 0;
+    /*PerfectPixel*/
     margin-top: 7px;
 }
 
@@ -164,18 +167,18 @@ img {
     margin-top: 10px;
 }
 
-/* navigation */
+/*navigation*/
 .navigation_bar {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
             align-items: center;
-    font-family: 'Monserrat', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     text-align: center;
     font-size: 0.933rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 0 30px;
+    margin: 0 -30px;
 }
 
 .navigation_bar ul {
@@ -191,22 +194,26 @@ img {
 }
 
 .li_nav {
-    padding: 20px 27.5px /* Perfectpixel */ 0;
+    padding: 20px 27.5px /*PerfectPixel*/ 0;
     position: relative;
 }
 
 .nav_btn {
     margin-left: 5px;
     margin-right: 7px;
-    /* PerfectPixel */
+    /*PerfectPixel*/
 }
 
-.burger{
+.li_nav_btn {
+    padding: 22px /*PerfectPixel*/ 20px 0;
+    font-size: 1.25rem;
+}
+
+.burger {
     display: none;
 }
 
-/* navigation hover */
-
+/*navigation hover*/
 .li_nav > a:hover,
 .li_nav_btn > a:hover {
     color: #fce38a;
@@ -217,10 +224,11 @@ img {
 .main_logo a:hover {
     color: #fce38a;
 }
-/* banner */
+
+/*banner*/
 .banner {
-    /* min-height: 110vh; */
-    height: 1000px; /* PerfectPixel */
+    /*min-height: 100vh;*/
+    height: 1000px;/* - this line is needed for PerfectPixel instead the top one*/
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0 80px;
@@ -228,8 +236,9 @@ img {
     display: flex;
     -webkit-box-align: center;
             align-items: center;
-    position: absolute;       
+    position: relative;
 }
+
 .banner_text {
     display: -webkit-box;
     display: flex;
@@ -241,33 +250,40 @@ img {
     -webkit-box-align: center;
             align-items: center;
 }
+
 .h1_banner {
     font-size: 4.8rem;
-    padding-bottom: 13px;  /* PerfectPixel */
+    padding-bottom: 13px; /*PerfectPixel*/
     margin-bottom: 20px;
 }
+
 .h2_banner {
     font-size: 10rem;
     line-height: 0.933;
-    margin-bottom: 123px;  /* PerfectPixel */
+    margin-bottom: 123px; /*PerfectPixel*/
     letter-spacing: -0.03em;
 }
+
 .h2_banner.underline:before {
     background-color: #fff;
     bottom: -60px;
 }
+
 .a_more {
-    padding: 8px 30px;  /* PerfectPixel */
-    border:  3px solid #fff;
+    padding: 8px 30px; /*PerfectPixel*/
+    border: 3px solid #fff;
 }
+
 .a_more:hover {
     color: #f38181;
     border-color: #f38181;
 }
-/* servicer */
+
+/*services*/
 .services {
-    padding: 150px 0 131px;
+    padding: 150px 0 131px /*PerfectPixel*/;
 }
+
 .services_wrapper {
     display: -webkit-box;
     display: flex;
@@ -275,19 +291,22 @@ img {
     flex-wrap: wrap;
     position: relative;
 }
+
 .services_item {
     width: 33.333%;
-    padding: 46px 0; /* PerfectPixel */
+    padding: 46px 0; /*PerfectPixel*/
     display: -webkit-box;
     display: flex;
 }
-.services_item[class^="icon-"] {
+
+.services_item [class^="icon-"] {
     font-size: 32px;
-    color: #95e1b3;
-    padding: 0 27px;  /* PerfectPixel */
+    color: #95e1d3;
+    padding: 0 27px; /*PerfectPixel*/
 }
-/* grey line between services rows */
-.services_item:nth-child(3n+1):before {
+
+/*grey line between services' rows*/
+.services_item:nth-child(3n+1):before{
     content: "";
     display: block;
     position: absolute;
@@ -296,15 +315,18 @@ img {
     right: 0;
     background-color: #e5e5e5;
     -webkit-transform: translateY(-46px);
-            transform: translateY(-46px); 
+            transform: translateY(-46px);
 }
-.services_item:first-child::before {
+
+.services_item:first-child:before {
     display: none;
 }
-/* facts */
+
+/*facts*/
 .facts {
     position: relative;
 }
+
 .facts_wrapper {
     display: -webkit-box;
     display: flex;
@@ -314,16 +336,18 @@ img {
     -webkit-box-pack: start;
             justify-content: flex-start;
 }
+
 .facts_wrapper:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 0;
     right: 0;
     height: 100%;
-    background-color: #95e1b3;
-    z-index: -1;    
+    background-color: #95e1d3;
+    z-index: -1;
 }
+
 .facts_item {
     display: -webkit-box;
     display: flex;
@@ -338,15 +362,18 @@ img {
     padding: 70px 20px 85px;
     border-left: 1px rgba(255, 255, 255, .3) solid;
 }
+
 .facts_item:last-child,
-.facts_item:nth-child(5n) {
+.facts_item:nth-child(5n){
     border-right: 1px rgba(255, 255, 255, .3) solid;
 }
+
 .facts_item > h2,
-.facts_item >h3 {
+.facts_item > h3 {
     text-align: center;
     margin-bottom: 0;
 }
+
 .number {
     font-size: 72px;
     padding-bottom: 8px;
