@@ -516,3 +516,67 @@ img {
 .about {
     padding: 111px 0 10px; /*PerfectPixel*/
 }
+/*gallery*/
+.gallery_wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+}
+
+.gallery_column {
+    width: 25%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    /*if the height of pic is less than it needs*/
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
+    background-color: #95e1d3;
+}
+
+.gallery_item {
+    position: relative;
+}
+
+/*gallery photos*/
+.gallery_img img {
+    width: 100%;
+}
+
+.gallery_img.orange_gradient:before {
+    visibility: hidden;
+}
+
+/*gallery text*/
+.gallery_img_describe {
+    visibility: hidden;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    margin-top: 10px;
+}
+.gallery_img_describe h3 {
+    text-align: center;
+}
+
+.gallery_img_describe [class^="icon-"] {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+/*gallery hover*/
+.gallery_img.orange_gradient:hover:before,
+.gallery_img.orange_gradient:hover .gallery_img_describe {
+    visibility: visible;
+}
