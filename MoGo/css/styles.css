@@ -378,3 +378,111 @@ img {
     font-size: 72px;
     padding-bottom: 8px;
 }
+/* team */
+.team {
+    padding: 105px 0 87px; /*PerfectPixel*/
+}
+
+/*team text*/
+
+.team h3 {
+    text-align: center;
+}
+
+.team_wrapper {
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.team_item {
+    width: calc(33.333% - 15px);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/*team photos*/
+
+.team_img {
+    position: relative;
+    -webkit-transition: box-shadow 0.2s ease-in, -webkit-transform 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in, -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in, -webkit-transform 0.2s ease-in;
+    margin-bottom: 29px;
+    max-width: 100%;
+}
+
+.team_img img {
+    width: 100%;
+}
+
+.team_img.orange_gradient:before {
+    visibility: hidden;
+}
+
+/*share icons*/
+
+.team_share {
+    visibility: hidden;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+}
+
+.team_share_a {
+    font-size: 1.666rem;
+    line-height: 1;
+    color: #f38181;
+    background-color: #fce38a;
+    padding: 15px;
+    border-left: 1px #f38181 solid;
+    -webkit-transition: color 0.2s ease, background-color 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.team_share_a:first-child {
+    border-left: none;
+}
+
+/*team hover*/
+
+.team_img.orange_gradient:hover:before,
+.team_img.orange_gradient:hover .team_share {
+    visibility: visible;
+}
+
+.team_img.orange_gradient:hover {
+    -webkit-transform: translateX(-10px) translateY(-10px);
+            transform: translateX(-10px) translateY(-10px);
+    box-shadow: 10px 10px #95e1d3;
+}
+
+.team_share_a:hover {
+    background-color: #f38181;
+    color: #fff;
+}
