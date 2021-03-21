@@ -486,3 +486,33 @@ img {
     background-color: #f38181;
     color: #fff;
 }
+.parthners {
+    position: relative;
+}
+.parthners_wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+}
+.parthners:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #f8f8f8;
+    z-index: -1;
+}
+.parthners_item {
+    padding: 60px 0px;
+    max-width: 15%;
+    width: expression(this.width < 15?"auto":"15%");
+}
+/* about */
+.about {
+    padding: 111px 0 10px; /*PerfectPixel*/
+}
