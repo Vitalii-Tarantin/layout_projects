@@ -580,3 +580,52 @@ img {
 .gallery_img.orange_gradient:hover .gallery_img_describe {
     visibility: visible;
 }
+/* testimonial */
+.testimonial_wrapper {
+    width: 100%;
+    padding: 98px 80px 130px; /*PerfectPixel*/
+}
+
+.testimonial_item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+}
+
+.photo_author {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.testimonial_text {
+    margin: 10px 30px 0;  /*PerfectPixel*/
+}
+
+.testimonial_quote {
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 17px;
+}
+
+.testimonial_author {
+    font-family: 'Kaushan Script', 'Monotype Corsiva', cursive;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #333;
+    position: relative;
+    padding-left: 70px;
+}
+
+.testimonial_author.underline:before {
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
