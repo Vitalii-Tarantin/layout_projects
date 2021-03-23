@@ -378,7 +378,8 @@ img {
     font-size: 72px;
     padding-bottom: 8px;
 }
-/* team */
+
+/*team*/
 .team {
     padding: 105px 0 87px; /*PerfectPixel*/
 }
@@ -486,9 +487,13 @@ img {
     background-color: #f38181;
     color: #fff;
 }
+
+/*pathners*/
+
 .parthners {
     position: relative;
 }
+
 .parthners_wrapper {
     display: -webkit-box;
     display: flex;
@@ -497,8 +502,9 @@ img {
     -webkit-box-align: center;
             align-items: center;
 }
+
 .parthners:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 0;
@@ -507,15 +513,18 @@ img {
     background-color: #f8f8f8;
     z-index: -1;
 }
+
 .parthners_item {
     padding: 60px 0px;
     max-width: 15%;
     width: expression(this.width < 15?"auto":"15%");
 }
-/* about */
+
+/*about*/
 .about {
     padding: 111px 0 10px; /*PerfectPixel*/
 }
+
 /*gallery*/
 .gallery_wrapper {
     width: 100%;
@@ -580,7 +589,8 @@ img {
 .gallery_img.orange_gradient:hover .gallery_img_describe {
     visibility: visible;
 }
-/* testimonial */
+
+/*testimonial*/
 .testimonial_wrapper {
     width: 100%;
     padding: 98px 80px 130px; /*PerfectPixel*/
@@ -629,7 +639,8 @@ img {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
 }
-/* clients */
+
+/*clients*/
 .clients {
     background-repeat: no-repeat;
     background-size: cover;
@@ -694,4 +705,88 @@ img {
     border-radius: 50%;
     margin: 0 30px 0 40px;
     flex-shrink: 0;
+}
+
+/*stories*/
+.stories {
+    padding: 109px 0 0; /*PerfectPixel*/
+}
+
+.stories_wrapper {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px -16px 37px;
+}
+
+.stories_item {
+    width: 33.333%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding: 30px 16px;
+}
+
+/*stories photos*/
+.stories_img {
+    position: relative;
+}
+
+.stories_img img {
+    width: 100%;
+}
+
+/*stories' dates*/
+.story_date {
+    display: block;
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    background-color: #95e1d3;
+    padding: 11px 15px; /*PerfectPixel*/
+    min-width: 60px;
+}
+
+.story_date h2 {
+    margin-bottom: 0;
+    line-height: 1.1; /*PerfectPixel*/
+}
+
+/*story text*/
+.story_text {
+    padding-bottom: 18px; /*PerfectPixel*/
+    border-bottom: 1px #e5e5e5 solid;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+}
+
+.story_text h3 {
+    margin: 18px 0 10px; /*PerfectPixel*/
+}
+
+/*count of views and comments of story*/
+.viewing_count {
+    display: -webkit-box;
+    display: flex;
+    padding: 15px 20px 0 0;
+}
+
+.viewing_count p {
+    text-align: left;
+    padding-right: 20px;
+    position: relative;
+    vertical-align: center;
+}
+
+.viewing_count  [class^="icon-"]:before {
+    color: #95e1d3;
+    font-size: 1.1rem;
+}
+
+.viewing_count  span {
+    position: relative;
+    top: calc(50% - 0.55rem);
+    padding-right: 5px;
 }
